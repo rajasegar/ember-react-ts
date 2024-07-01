@@ -7,9 +7,9 @@ Ember addon to use React Functional components inside Ember apps.
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.12 or above
-* Ember CLI v2.13 or above
-* Node.js v10 or above
+* Ember.js v3.20 or above
+* Ember CLI v3.20 or above
+* Node.js v12 or above
 
 
 Installation
@@ -22,7 +22,7 @@ ember install ember-react-ts
 Compatibility
 ------------------------------------------------------------------------------
 
-This addon requires Ember CLI 2.15 or higher.
+This addon requires Ember CLI 3.20 or higher.
 
 Usage
 ------------------------------------------------------------------------------
@@ -59,6 +59,20 @@ And render it like this:
 ```
 
 That would create a component that renders `Hello, Raja`.
+
+
+Component Blueprints
+--------------------
+You can generate React components using the `ember g` command like this:
+```
+ember g react-component hello-world
+```
+
+This will create a new React component `hello-world.tsx` inside `app/components` folder.
+In your templates you can use it like 
+```handlebars
+<HelloWord />
+```
 
 Options
 ------------------------------------------------------------------------------
