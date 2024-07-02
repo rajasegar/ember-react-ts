@@ -7,7 +7,7 @@ module.exports = function (api) {
 
   return {
     presets: [
-      require.resolve("@babel/preset-react"),
+          require.resolve("@babel/preset-react"),
     ],
 
     plugins: [
